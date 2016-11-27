@@ -1,0 +1,21 @@
+this指向谁?
+
+结论
+
+1 new 
+var p = new Person();
+
+2 call apply
+var fn = function(){};
+fn.call(obj);
+fn.call(null);
+
+3 obj.fn()
+谁使用指向谁
+
+
+4 不明确的情况
+console.log(this.name);
+
+
+5 bind 
