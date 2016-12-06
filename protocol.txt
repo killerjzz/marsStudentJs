@@ -1,0 +1,35 @@
+// 棋盘数据格式
+chessBoard:
+[
+	Box[]
+]
+
+
+[
+	[box1,box2,...],
+	[box11,box22,...],
+
+]
+
+// -1 表示空白
+// 0 表示黑子
+// 1 表示白子
+box:number
+
+
+
+请求：
+1 生成一个地图
+req:
+{
+	url:'createMap'
+	params:{
+		width:number,
+		height:number
+	}
+}
+
+res:
+{
+	chessBoard:number[][]
+}
