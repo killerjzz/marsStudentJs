@@ -33,3 +33,4 @@ res:
 {
 	chessBoard:number[][]
 }
+
