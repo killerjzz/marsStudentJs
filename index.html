@@ -3,9 +3,28 @@
 <head>
 	<title></title>
 	<meta charset="utf-8">
-	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="node_modules/vue/dist/vue.js"></script>
 </head>
 <body>
+	<div id="app"  v-bind:title="myTitle">
+	  {{ message }}
+	  <span v-if="isShow">i am happy</span>
+		<hr>
+		<div>
+			<span v-for="huobi in list">
+				{{huobi}}
+			</span>
+		</div>
+	<button v-on:click="refresh(4)">Refresh</button>
+
+	<input v-model="message">
+	<ul>
+		<todo-item v-for="huobi in list" v-bind:todo="huobi"></todo-item>
+		
+	</ul>
+	</div>
+
 
 </body>
+<script type="text/javascript" src="script/app.js"></script>
 </html>
